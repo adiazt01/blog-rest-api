@@ -1,3 +1,5 @@
+import { prisma } from "../app.js";
+
 export const getAllPosts = async (req, res) => {
   try {
     const posts = await prisma.post.findMany();
